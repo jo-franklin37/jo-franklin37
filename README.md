@@ -226,8 +226,8 @@ Virtual makeup try-on app with real-time facial landmark tracking.
 
 <div align="center">
 
-<img height="165em" src="https://github-readme-stats.vercel.app/api?username=jo-franklin37&show_icons=true&theme=radical&hide_border=true&bg_color=09090B&title_color=FF3B3B&icon_color=FF6B6B&text_color=FFFFFF" />
-<img height="165em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=jo-franklin37&layout=compact&theme=radical&hide_border=true&bg_color=09090B&title_color=FF3B3B&text_color=FFFFFF" />
+<img height="165em" src="https://YOUR-STATS-DOMAIN.vercel.app/api?username=jo-franklin37&show_icons=true&theme=radical&hide_border=true&bg_color=09090B&title_color=FF3B3B&icon_color=FF6B6B&text_color=FFFFFF" />
+<img height="165em" src="https://YOUR-STATS-DOMAIN.vercel.app/api/top-langs/?username=jo-franklin37&layout=compact&theme=radical&hide_border=true&bg_color=09090B&title_color=FF3B3B&text_color=FFFFFF" />
 
 <br/>
 
@@ -248,17 +248,40 @@ Virtual makeup try-on app with real-time facial landmark tracking.
 </div>
 
 <details>
-<summary>⚙️ 3D calendar workflow (add to <code>.github/workflows/profile-3d-contrib.yml</code>)</summary>
+<summary>⚙️ Combined workflow — generates both Snake and 3D Calendar (add to <code>.github/workflows/profile-visuals.yml</code>)</summary>
 
 ```yaml
-name: 3D Profile Contribution
+name: Profile Visuals (Snake + 3D Calendar)
 on:
   schedule:
     - cron: "0 0 * * *"
   workflow_dispatch: {}
+  push:
+    branches:
+      - main
 
 jobs:
-  build:
+  snake:
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: Platane/snk@v3
+        id: snake-gif
+        with:
+          github_user_name: jo-franklin37
+          outputs: |
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+            dist/github-contribution-grid-snake.svg
+      - uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  calendar-3d:
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -287,7 +310,7 @@ jobs:
 
 <img src="https://raw.githubusercontent.com/jo-franklin37/jo-franklin37/output/github-contribution-grid-snake-dark.svg" width="95%" />
 
-<sub>Powered by <a href="https://github.com/Platane/snk">Platane/snk</a> — activate via the GitHub Action in your profile repo.</sub>
+<sub>Powered by <a href="https://github.com/Platane/snk">Platane/snk</a> — activated by the same combined workflow above.</sub>
 
 </div>
 
@@ -298,7 +321,7 @@ jobs:
 ## ⟡ Trophy Case
 
 <div align="center">
-<img src="https://github-profile-trophy.vercel.app/?username=jo-franklin37&theme=dracula&no-frame=true&no-bg=true&row=1&column=7" />
+<img src="https://YOUR-TROPHY-DOMAIN.vercel.app/?username=jo-franklin37&theme=dracula&no-frame=true&no-bg=true&row=1&column=7" />
 </div>
 
 <br/>
