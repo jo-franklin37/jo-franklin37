@@ -1,6 +1,6 @@
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:09090B,50:4a0000,100:09090B&height=260&section=header&text=JOSHUA%20FRANKLIN&fontSize=56&fontColor=FF3B3B&animation=fadeIn&fontAlignY=40&desc=Artificial%20Intelligence%20Engineer&descAlignY=58&descSize=18&descColor=FF6B6B" />
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:09090B,50:1a1a2e,100:09090B&height=260&section=header&text=JOSHUA%20FRANKLIN&fontSize=56&fontColor=00E5FF&animation=fadeIn&fontAlignY=40&desc=Artificial%20Intelligence%20Engineer&descAlignY=58&descSize=18&descColor=8B5CF6" />
 
 </div>
 
@@ -25,7 +25,7 @@ BOOTING JoshuaOS v3.7...
 
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=24&duration=3000&pause=1000&color=FF3B3B&center=true&vCenter=true&width=650&lines=Artificial+Intelligence+Engineer;Machine+Learning;Medical+AI;Computer+Vision;Deep+Learning;LLM+Engineering;Building+Intelligent+Systems" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=24&duration=3000&pause=1000&color=00E5FF&center=true&vCenter=true&width=650&lines=Artificial+Intelligence+Engineer;Machine+Learning;Medical+AI;Computer+Vision;Deep+Learning;LLM+Engineering;Building+Intelligent+Systems" />
 
 </div>
 
@@ -35,9 +35,9 @@ BOOTING JoshuaOS v3.7...
 
 ## ⟡ Research Mission
 
-I'm a final-year **B.Tech Artificial Intelligence & Data Science** student at Christ The King Engineering College (Anna University), India, currently working as an AI & Data Science Researcher at JODHRS International. My interest is in building AI systems that are useful under real, imperfect conditions — clinical images that don't look like the textbook case, language models that face adversarial input, agents that have to coordinate rather than act alone.
+I'm a final-year **B.Tech Artificial Intelligence & Data Science** student at Christ The King Engineering College (Anna University), India, currently working as an AI & Data Science Researcher at JODHRS International. My interest is in building AI systems that hold up under real, imperfect conditions — clinical images that don't look like the textbook case, language models facing adversarial input, agents that have to coordinate rather than act alone.
 
-That's why my work spans **medical imaging**, **computer vision**, **LLM security**, and **multi-agent systems** — different surfaces of the same underlying question: how do you make AI trustworthy enough to rely on. My background in Biology and Mathematics from school is what first pointed me toward medical AI specifically, and it's stayed the throughline of my portfolio since.
+That's why my work spans **medical imaging**, **computer vision**, **LLM security**, and **multi-agent systems** — different surfaces of the same question: how do you make AI trustworthy enough to rely on. My background in Biology and Mathematics from school first pointed me toward medical AI specifically, and it's remained the throughline of my portfolio since.
 
 Long-term, I'm working toward a research-focused MSc in Artificial Intelligence in Germany.
 
@@ -226,32 +226,36 @@ Virtual makeup try-on app with real-time facial landmark tracking.
 
 <div align="center">
 
-<img height="165em" src="https://YOUR-STATS-DOMAIN.vercel.app/api?username=jo-franklin37&show_icons=true&theme=radical&hide_border=true&bg_color=09090B&title_color=FF3B3B&icon_color=FF6B6B&text_color=FFFFFF" />
-<img height="165em" src="https://YOUR-STATS-DOMAIN.vercel.app/api/top-langs/?username=jo-franklin37&layout=compact&theme=radical&hide_border=true&bg_color=09090B&title_color=FF3B3B&text_color=FFFFFF" />
+<img height="165em" src="https://github-readme-stats.vercel.app/api?username=jo-franklin37&show_icons=true&theme=radical&hide_border=true&bg_color=09090B&title_color=00E5FF&icon_color=8B5CF6&text_color=FFFFFF" />
+<img height="165em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=jo-franklin37&layout=compact&theme=radical&hide_border=true&bg_color=09090B&title_color=00E5FF&text_color=FFFFFF" />
 
 <br/>
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=jo-franklin37&theme=radical&hide_border=true&background=09090B&ring=FF3B3B&fire=FF6B6B&currStreakLabel=FF3B3B" />
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=jo-franklin37&theme=radical&hide_border=true&background=09090B&ring=00E5FF&fire=8B5CF6&currStreakLabel=00E5FF" />
+
+<br/>
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=jo-franklin37&theme=react-dark&hide_border=true&bg_color=09090B&color=00E5FF&line=8B5CF6&point=FFFFFF" width="95%"/>
 
 </div>
 
 <br/>
 
-## ⟡ 3D Contribution Calendar
+## ⟡ Contribution Snake
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/jo-franklin37/jo-franklin37/main/profile-3d-contrib/profile-night-rainbow.svg" width="95%"/>
+<img src="https://raw.githubusercontent.com/jo-franklin37/jo-franklin37/output/github-contribution-grid-snake-dark.svg" width="95%" />
 
-<sub>Generated via <a href="https://github.com/yoshi389111/github-profile-3d-contrib">yoshi389111/github-profile-3d-contrib</a> — self-hosted, requires the workflow below.</sub>
+<sub>Powered by <a href="https://github.com/Platane/snk">Platane/snk</a> — requires a one-time GitHub Action setup in your profile repo (see note below).</sub>
 
 </div>
 
 <details>
-<summary>⚙️ Combined workflow — generates both Snake and 3D Calendar (add to <code>.github/workflows/profile-visuals.yml</code>)</summary>
+<summary>⚙️ Snake workflow (add to <code>.github/workflows/snake.yml</code>)</summary>
 
 ```yaml
-name: Profile Visuals (Snake + 3D Calendar)
+name: generate animation
 on:
   schedule:
     - cron: "0 0 * * *"
@@ -261,7 +265,7 @@ on:
       - main
 
 jobs:
-  snake:
+  generate:
     permissions:
       contents: write
     runs-on: ubuntu-latest
@@ -280,39 +284,8 @@ jobs:
           build_dir: dist
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-  calendar-3d:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    steps:
-      - uses: actions/checkout@v4
-      - uses: yoshi389111/github-profile-3d-contrib@0.7.1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          USERNAME: jo-franklin37
-      - name: Commit & push
-        run: |
-          git config user.name github-actions
-          git config user.email github-actions@github.com
-          git add -f ./profile-3d-contrib/*.svg
-          git commit -m "Update 3D contribution calendar" || exit 0
-          git push
 ```
-
 </details>
-
-<br/>
-
-## ⟡ Contribution Snake
-
-<div align="center">
-
-<img src="https://raw.githubusercontent.com/jo-franklin37/jo-franklin37/output/github-contribution-grid-snake-dark.svg" width="95%" />
-
-<sub>Powered by <a href="https://github.com/Platane/snk">Platane/snk</a> — activated by the same combined workflow above.</sub>
-
-</div>
 
 <br/>
 
@@ -321,7 +294,7 @@ jobs:
 ## ⟡ Trophy Case
 
 <div align="center">
-<img src="https://YOUR-TROPHY-DOMAIN.vercel.app/?username=jo-franklin37&theme=dracula&no-frame=true&no-bg=true&row=1&column=7" />
+<img src="https://github-profile-trophy.vercel.app/?username=jo-franklin37&theme=radical&no-frame=true&no-bg=true&row=1&column=7" />
 </div>
 
 <br/>
@@ -332,19 +305,19 @@ jobs:
 
 ## ⟡ Connect
 
-<a href="https://joshuafranklin.vercel.app"><img src="https://img.shields.io/badge/Portfolio-09090B?style=for-the-badge&logo=vercel&logoColor=FF3B3B" /></a>
-<a href="#"><img src="https://img.shields.io/badge/LinkedIn-09090B?style=for-the-badge&logo=linkedin&logoColor=FF3B3B" /></a>
-<a href="https://github.com/jo-franklin37"><img src="https://img.shields.io/badge/GitHub-09090B?style=for-the-badge&logo=github&logoColor=FF3B3B" /></a>
-<a href="#"><img src="https://img.shields.io/badge/Email-09090B?style=for-the-badge&logo=gmail&logoColor=FF3B3B" /></a>
+<a href="https://joshuafranklin.vercel.app"><img src="https://img.shields.io/badge/Portfolio-09090B?style=for-the-badge&logo=vercel&logoColor=00E5FF" /></a>
+<a href="#"><img src="https://img.shields.io/badge/LinkedIn-09090B?style=for-the-badge&logo=linkedin&logoColor=00E5FF" /></a>
+<a href="https://github.com/jo-franklin37"><img src="https://img.shields.io/badge/GitHub-09090B?style=for-the-badge&logo=github&logoColor=00E5FF" /></a>
+<a href="#"><img src="https://img.shields.io/badge/Email-09090B?style=for-the-badge&logo=gmail&logoColor=00E5FF" /></a>
 
 <br/><br/>
 
-<img src="https://komarev.com/ghpvc/?username=jo-franklin37&label=Profile%20Views&color=FF3B3B&style=flat-square" />
+<img src="https://komarev.com/ghpvc/?username=jo-franklin37&label=Profile%20Views&color=00E5FF&style=flat-square" />
 
 <br/><br/>
 
 <sub><i>Building intelligent systems that augment human capability.</i></sub>
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:09090B,50:4a0000,100:09090B&height=120&section=footer" />
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:09090B,50:1a1a2e,100:09090B&height=120&section=footer" />
 
 </div>
