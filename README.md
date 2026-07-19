@@ -55,7 +55,6 @@ Long-term, I'm working toward a research-focused MSc in Artificial Intelligence 
 | **STATUS** | 🟢 ONLINE |
 | **RESEARCH MODE** | ACTIVE |
 | **CURRENT MISSION** | Medical AI · LLM Security |
-| **GPU** | NVIDIA RTX 3050 (4GB VRAM) |
 | **PRIMARY LANGUAGE** | Python |
 | **EDUCATION** | B.Tech AI & Data Science |
 | **LOCATION** | India |
