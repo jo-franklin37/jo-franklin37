@@ -55,11 +55,9 @@ Long-term, I'm working toward a research-focused MSc in Artificial Intelligence 
 | **STATUS** | 🟢 ONLINE |
 | **RESEARCH MODE** | ACTIVE |
 | **CURRENT MISSION** | Medical AI · LLM Security |
-| **GPU** | NVIDIA RTX 3050 (4GB VRAM) |
 | **PRIMARY LANGUAGE** | Python |
 | **EDUCATION** | B.Tech AI & Data Science |
 | **LOCATION** | India |
-| **TARGET** | MSc Artificial Intelligence, Germany |
 
 </div>
 
@@ -228,11 +226,58 @@ Virtual makeup try-on app with real-time facial landmark tracking.
 
 <div align="center">
 
-<img src="https://metrics.lecoq.io/jo-franklin37?template=classic&base.header=0&base.activity=1&base.community=0&base.repositories=0&base.metadata=0&config.timezone=Asia%2FKolkata&languages=1&languages.limit=8&languages.threshold=0&isocalendar=1&isocalendar.duration=full-year&achievements=1&achievements.threshold=C&achievements.secrets=true&notable=1&habits=1&habits.facts=true&habits.charts=true&repositories.forks=false&people.limit=0&title.color=FF3B3B&text.color=FFFFFF&icon.color=FF6B6B&bg.color=09090B&border.color=4a0000" width="100%"/>
+<img height="165em" src="https://github-readme-stats.vercel.app/api?username=jo-franklin37&show_icons=true&theme=radical&hide_border=true&bg_color=09090B&title_color=FF3B3B&icon_color=FF6B6B&text_color=FFFFFF" />
+<img height="165em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=jo-franklin37&layout=compact&theme=radical&hide_border=true&bg_color=09090B&title_color=FF3B3B&text_color=FFFFFF" />
+
+<br/>
+
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=jo-franklin37&theme=radical&hide_border=true&background=09090B&ring=FF3B3B&fire=FF6B6B&currStreakLabel=FF3B3B" />
 
 </div>
 
-<sub align="center">Single all-in-one metrics card via <a href="https://github.com/lowlighter/metrics">lowlighter/metrics</a> — combines stats, languages, isometric contribution calendar, and habits in one themed embed. Requires enabling the plugins above via your own metrics Action run (README embeds of the public instance may be rate-limited).</sub>
+<br/>
+
+## ⟡ 3D Contribution Calendar
+
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/jo-franklin37/jo-franklin37/main/profile-3d-contrib/profile-night-rainbow.svg" width="95%"/>
+
+<sub>Generated via <a href="https://github.com/yoshi389111/github-profile-3d-contrib">yoshi389111/github-profile-3d-contrib</a> — self-hosted, requires the workflow below.</sub>
+
+</div>
+
+<details>
+<summary>⚙️ 3D calendar workflow (add to <code>.github/workflows/profile-3d-contrib.yml</code>)</summary>
+
+```yaml
+name: 3D Profile Contribution
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch: {}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: yoshi389111/github-profile-3d-contrib@0.7.1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: jo-franklin37
+      - name: Commit & push
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add -f ./profile-3d-contrib/*.svg
+          git commit -m "Update 3D contribution calendar" || exit 0
+          git push
+```
+
+</details>
 
 <br/>
 
