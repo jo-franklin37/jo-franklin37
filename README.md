@@ -291,16 +291,6 @@ jobs:
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:09090B,100:09090B&height=1&section=header" width="100%"/>
 
-## ⟡ Trophy Case
-
-<div align="center">
-<img src="https://github-profile-trophy.vercel.app/?username=jo-franklin37&theme=radical&no-frame=true&no-bg=true&row=1&column=7" />
-</div>
-
-<br/>
-
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:09090B,100:09090B&height=1&section=header" width="100%"/>
-
 <div align="center">
 
 ## ⟡ Connect
