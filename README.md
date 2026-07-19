@@ -58,7 +58,6 @@ Long-term, I'm working toward a research-focused MSc in Artificial Intelligence 
 | **PRIMARY LANGUAGE** | Python |
 | **EDUCATION** | B.Tech AI & Data Science |
 | **LOCATION** | India |
-| **TARGET** | MSc Artificial Intelligence, Germany |
 
 </div>
 
